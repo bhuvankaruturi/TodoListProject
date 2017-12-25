@@ -2,20 +2,22 @@
 <html>
 <head>
 	<title>Todo List</title>
-	<!-- <link rel="stylesheet" type="text/css" href="assets/css/lib/fontawesome-all.css"> -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700" rel="stylesheet"> 
 	<link href="https://use.fontawesome.com/releases/v5.0.2/css/all.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="assets/css/todos.css">
 	<script type="text/javascript" src="assets/js/lib/jQuery.js"></script>
 </head>
 <body>
 	<div id="container">
-		<div>
-			<h1>TO-DO LIST <i class="fas fa-plus"></i></h1>
+		<div id="header">
+			<h1>TO-DO LIST <span><i class="fas fa-plus"></i></span></h1>
 		</div>
-		<input type="text" name="new-todo" placeholder="Enter a New Todo">
-		<li><i class="far fa-trash-alt fa-xs delete"></i>Kill Voldemort</li>
-		<li><i class="far fa-trash-alt fa-xs delete"></i>Attend Potions Class</li>
-		<li><i class="far fa-trash-alt fa-xs delete"></i>Talk with Prof.Dumbledore</li>
+		<ul>
+			<input type="text" name="new-todo" placeholder="Enter a New Todo">
+			<li><span><i class="far fa-trash-alt fa-xs"></i></span>Kill Voldemort</li>
+			<li><span><i class="far fa-trash-alt fa-xs"></i></span>Attend Potions Class</li>
+			<li><span><i class="far fa-trash-alt fa-xs"></i></span>Talk with Prof.Dumbledore</li>
+		</ul>	
 	</div>
 	<script type="text/javascript" src="assets/js/todos.js"></script>
 </body>

@@ -1,21 +1,13 @@
 
 $("h1").on("click","i", function(){
-	$("input[type='text']").toggleClass("hide");
+	$("input[type='text']").slideToggle("linear");
 })
 
 $("#container").on("click","li", function(){
 	$(this).toggleClass("strikeThrough")
 });
 
-$("#container").on("mouseenter","li", function(){
-	$(this).children("i").css("display", "inline-block");
-});
-
-$("#container").on("mouseleave","li", function(){
-	$(this).children("i").css("display", "none");
-});
-
-$("#container").on("click", "li > i", function(event){
+$("#container").on("click", "li > span", function(event){
 	$(this).parent().fadeOut(500, function(){
 		$(this).remove();
 	});
@@ -24,7 +16,9 @@ $("#container").on("click", "li > i", function(event){
 
 $("input[type='text']").on("keypress", function(event){
 	if (event.which === 13){
-		$("#container").append("<li><i class='far fa-trash-alt fa-xs delete'></i>" + $(this).val() + "</li>");
-		this.value = "";
+		if ($(this).val() != ""){
+			$("#container").append("<li><span><i class='far fa-trash-alt fa-xs delete'></i></span>" + $(this).val() + "</li>");
+			this.value = "";
+		}
 	}
 });
