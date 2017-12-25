@@ -1,0 +1,53 @@
+#container{
+	width: 30%;
+	margin: 100px auto;
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+	margin: 0;
+	color: white;
+	background-color: #2980b9;
+	padding: 10px 20px;
+	text-transform: uppercase;
+	font-size: 24px;
+	font-weight: normal;
+}
+
+input{
+	width: 95%;
+	border: none;
+	padding: 10px;
+}
+
+li {
+	list-style-type: none;
+}
+
+li:nth-of-type(odd){
+	background-color: rgb(239, 243, 249);
+}
+
+li:nth-of-type(even){
+	background-color: white;
+}
+
+.hide {
+	display: none;
+}
+
+.delete {
+	display: none;
+	transition: width 2s;
+	-webkit-transition: width 2s;
+	-moz-transition: width 2s;
+}
+
+.strikeThrough{
+	text-decoration: line-through;
+}
+
+.fa-trash-alt{
+	background-color: red;
+	color: white;
+}
